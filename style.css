@@ -1,0 +1,498 @@
+/* spacing on all sections */
+.section {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+.section:last-of-type {
+    padding-bottom: 4rem;
+}
+    
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/RAP_0219.JPG');
+    background-size:cover;
+    position:relative;
+    padding: 0;
+    margin: 0;
+}
+/* text css above hero image*/
+.hero_title {
+    padding-top: 10rem;
+    font-size: 4.5rem;
+}
+.hero_desc {
+    font-size: 2rem;
+}
+.hero_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.image_about {
+    width: 100%;
+}
+
+.navbarDark {
+    background: #000;
+}
+
+
+ .social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover, 
+.fa-twitch:hover {
+    color: #fff;
+}
+.fab {
+    color: #000000;
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+.footer {
+    background-color: #808080;
+    text-align: center;
+}
+.glow-text{
+            position: relative;
+            font-size: 6em;
+            letter-spacing: 5px;
+            color: rgb(29, 41, 29);
+            text-transform: uppercase;
+            width: 100%;
+            text-align: center;
+            
+            outline: none;
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate{
+            0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+                color:rgb(29, 41, 29);
+                box-shadow: none;
+            }
+            18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+                color: white;
+                text-shadow: 0 0 10px rgb(84, 235, 237),0 0 20px rgb(84, 235, 237),0 0 40px rgb(84, 235, 237),0 0 80px rgb(84, 235, 237),0 0 160px rgb(84, 235, 237);
+                
+            }
+        }
+
+
+.img-container{
+
+overflow: hidden;
+
+}
+.img-container > img {
+ width: 100%;
+height: 100%;
+fliter: greyscale(1);
+transition:
+        scale 750ms ease-out,
+	filter 250ms ease-in-out;
+}
+.img-container:hover > img {
+ scale: 1.15;
+filter:greyscale(0);
+}
+
+.link {
+text-decoration: none;
+color: #fff;
+font-size: 22px
+padding: 1rem 2rem;
+position: relative;
+}
+
+.link::before,
+.link::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 2px;
+background: #fff;
+transform: scaleX(0);
+transition: all 0.6s ease;
+
+}
+
+.link::before {
+top: 0;
+left: 0;
+transform-origin:left;
+color: #fff;
+}
+.link::after {
+bottom: 0;
+left: 0;
+transform-origin:right;
+color: #fff;
+}
+.link:hover::before,
+.link:hover::after {
+transform:scaleX(1);
+color: #fff;
+}
+
+.box {
+  background: linear-gradient(to right, gold, green);
+  color: white;
+  --width: 150px;
+  --height: calc(var(--width) / 3);
+  width: var(--width);
+  height: var(--height);
+  text-align: center;
+  line-height: var(--height);
+  font-size: calc(var(--height) / 2.5);
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+  border: 1px solid darkgoldenrod;
+  border-radius: 2em;
+  transform: perspective(500px) rotateY(-15deg);
+  text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.box:hover {
+  transform: perspective(500px) rotateY(15deg);
+  text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  left: -100%;
+  transition: 0.5s;
+}
+
+.box:hover::before {
+  left: 100%;
+}
+
+/* Container class for contact us design */
+.container_drop {
+    position: relative;
+    left: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_drop .drop {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+        25px 35px 20px rgba(0, 0, 0, 0.05),
+        25px 30px 30px rgba(0, 0, 0, 0.05),
+        inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 52% 48% 33% 67% / 38% 45% 55% 62%;
+}
+
+.container_drop .drop:hover {
+    border-radius: 50%;
+}
+
+.container_drop .drop::before {
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.container_drop .drop::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.9;
+}
+
+.container_drop .drop .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px;
+    gap: 15px;
+}
+
+.container_drop .drop .content h2 {
+    position: relative;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.container_drop .drop .content form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_drop .drop .content form .inputBox {
+    position: relative;
+    width: 245px;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        inset -2px -5px 10px rgba(255, 255, 255, 1),
+        15px 15px 10px rgba(0, 0, 0, 0.05),
+        15px 10px 15px rgba(0, 0, 0, 0.025);
+    border-radius: 25px;
+}
+
+.container_drop .drop .content form .inputBox::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+}
+
+.container_drop .drop .content form .inputBox input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 15px;
+}
+
+.container_drop .drop .content form .inputBox input[type="submit"] {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.container_drop .drop .content form .inputBox:last-child {
+    width: 120px;
+    background: #ff0f5b;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+        15px 15px 10px rgba(0, 0, 0, 0.05),
+        15px 10px 15px rgba(0, 0, 0, 0.025);
+    transition: 0.5s;
+}
+
+.container_drop .drop .content form .inputBox:last-child:hover {
+    width: 150px;
+}
+
+.btns {
+    position: absolute;
+    right: -120px;
+    bottom: 0;
+    width: 130px;
+    height: 130px;
+    background: #c61dff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.2em;
+    letter-spacing: 0.1em;
+    font-size: 0.8em;
+    transition: 0.25s;
+    text-align: center;
+    box-shadow: inset 10px 10px 10px rgba(190, 1, 254, 0.05),
+        15px 25px 10px rgba(190, 1, 254, 0.1),
+        15px 20px 20px rgba(190, 1, 254, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+    border-radius: 44% 56% 65% 35% / 57% 58% 42% 43%;
+}
+
+.btns::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.45;
+}
+
+.btns.signup {
+    bottom: 150px;
+    right: -120px;
+    width: 80px;
+    height: 80px;
+    border-radius: 49% 51% 52% 48% / 63% 59% 41% 37%;
+    background: #01b4ff;
+    box-shadow: inset 10px 10px 10px rgba(1, 180, 255, 0.05),
+        15px 25px 10px rgba(1, 180, 255, 0.1),
+        15px 20px 20px rgba(1, 180, 255, 0.1),
+        inset -10px -10px 15px rgba(255, 255, 255, 0.5);
+}
+
+.btns.signup::before {
+    left: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+.btns:hover {
+    border-radius: 50%;
+}
+
+
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+width:100%;
+
+}
+.row1{
+padding-bottom:15px;
+}
+.card{
+
+	Position:relative;
+padding-right:1px;
+}
+
+.card .face{
+    width: 340px;
+    height: 200px;
+    transition: 0.4s;
+}
+
+.card .front{
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.card:hover .front{
+    transform: translateY(0px);
+
+    box-shadow: 
+        inset  0 0 60px whitesmoke,
+        inset 20px 0 80px #f0f,
+        inset -20px 0 80px #0ff,
+        inset 20px 0 300px #f0f,
+        inset -20px 0 300px #0ff,
+                0 0 50px #fff,
+                -10px 0 80px #f0f,
+                10px 0 80px #0ff;
+    
+}
+
+.front .content{
+    opacity: 0.2;
+    color: white;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.card:hover .front .content{
+    opacity: 1;
+}
+
+.card .front .content i{
+    font-size: 3rem;
+    display: inline-block;
+}
+.card .front .content h3{
+    font-size: 1rem;
+}
+
+.back{
+    position: relative;
+    background: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 20px 50px #000000cc;
+    transform: translateY(-100px);
+}
+
+.card:hover .back{
+    transform: translateY(0px);
+}
+
+.back p, .back a{
+font-size: 0.8rem;
+margin: 0;
+padding: 0;
+color: #333;
+}
+.back a{
+    color: black;
+    outline: 1px dashed #333;
+    padding: 10px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.back a:hover{
+    background: #333;
+    color: white;
+}
+
+
+
+
